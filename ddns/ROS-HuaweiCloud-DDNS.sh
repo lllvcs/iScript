@@ -95,7 +95,7 @@ TARGET_IP=`sshpass -p $ROS_PASSWD ssh -o "StrictHostKeyChecking no" $ROS_USER@$R
 
 if [ $DEBUG -eq 1 ]; then
 cat<<EOF
-CloudXNS DDNS script debug info.
+HuaweiCloud DDNS script debug info.
       ROS Host: $ROS_HOST
       ROS User: $ROS_USER
   ROS Password: $ROS_PASSWD
