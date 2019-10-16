@@ -1,13 +1,23 @@
 #!/bin/bash
+
+#ZONE_ID和RECORDSET_ID，分别为域名id和子域id，请通过官方api获取(https://dns.myhuaweicloud.com/v2/zones)
+#ACCESS_KEY和ACCESS_SECRET请在我的凭证-访问密钥中生成
+#详情请参考官方文档(https://support.huaweicloud.com/api-dns/zh-cn_topic_0132421999.html)
+
 ZONE_ID="ZONE_ID"
 RECORDSET_ID="RECORDSET_ID"
 
 ACCESS_KEY="ACCESS_KEY"
 ACCESS_SECRET="ACCESS_SECRET"
 
+#从外网api获取ip地址(默认开启)
+REMOTE_RESOLVE=1
+
+#或从网卡获取ip地址(填写网卡名)
 INTERFACE=""
-REMOTE_RESOLVE=0
+
 TARGET_IP=""
+#Debug模式(默认关闭)
 DEBUG=0
 
 usage() {
