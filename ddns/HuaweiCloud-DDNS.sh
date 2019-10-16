@@ -13,7 +13,7 @@ DEBUG=0
 usage() {
 cat<<EOF
 Usage: 
-    ./HuaweiCloud-DDNS.sh --access-key "ACCESS_KEY" --access-secret "ACCESS_SECRET" -z "ZONE-_D" -r "RECORDSET_ID" -i "INTERFACE" -m
+    ./HuaweiCloud-DDNS.sh --access-key "ACCESS_KEY" --access-secret "ACCESS_SECRET" -z "ZONE-ID" -r "RECORDSET_ID" -i "INTERFACE" -m
 
     -k|--access-key
     -s|--access-secret
